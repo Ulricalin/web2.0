@@ -1,0 +1,145 @@
+/*林紫勤 for tmnt.html 2016.9.15*/
+body {
+    background-image: url(img/background.png);
+    background-repeat: repeat;
+    font-size: 8pt;
+    font-family: Verdana, Tahoma, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+
+}
+
+
+#banner {
+    text-align: center;
+    height: 50px;
+    background-image: url(img/bannerbackground.png);
+    background-repeat: repeat-x;
+}
+
+
+h1 {
+    font-family: Tahoma, Verdana, sans-serif;
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+
+/*中间整个框---------------------------------------------*/
+#overall_content {
+    width: 800px;
+    margin: auto;
+    border: 4px gray solid;
+    overflow: auto;
+}
+
+/*左边评论区---------------------*/
+#reviews {
+    float: left;
+    width: 550px;
+}
+
+/*评论区的头横幅*/
+#reviews_total {
+    height: 83px;
+    color: white;
+    background-image: url(img/rottenbackground.png);
+    background-repeat: repeat-x;
+}
+
+/*32%大字*/
+#reviews_total > #overall_rating {
+    font-size: 48pt;
+    font-weight: bold;
+    color: red;
+    vertical-align: text-bottom;
+}
+
+/*32旁边的小字*/
+#reviews_total > #reviews_num {
+    font: 8pt;
+    color: white;
+    vertical-align: 93%;
+}
+/*左边一列*/
+#reviews_left {
+    margin: 2%;
+    margin-right: 1%;
+    float: left;
+    width: 47%;
+
+}
+/*右边一列*/
+#reviews_right {
+    margin: 2%;
+    margin-left: 1%;
+    float: right;
+    width: 47%;
+}
+
+/*评论内容*/
+#reviews p.review {
+    line-height: 120%;
+    margin: 0 auto;
+    padding: 8px;
+    border: 2px gray solid;
+    font-size: 8pt;
+    font-weight: bold;
+    background-color: #E1D697;
+    overflow: auto;
+}
+#reviews p.review img {
+    margin-right: 5px;
+    float: left;
+}
+
+/*评论人*/
+#reviews p.name {
+    line-height: 120%;
+    overflow: auto;
+    margin-bottom: 3em;
+}
+#reviews p.name img{
+    float: left;
+    margin-right: 5px;
+}
+#reviews p.name span.italic{
+    font-style: italic;
+}
+
+/*右边影片概述-------------------*/
+#Overview {
+    float: right;
+    width: 250px;
+    background-color: #A2B964;
+    font-size: 8pt;
+    font-family: Arial, sans-serif;
+}
+#Overview > dl {
+    margin: 10px;
+}
+#Overview dl dt {
+    font-weight: bold;
+}
+#Overview dl dd {
+    margin-bottom: 1em;
+}
+
+/*底栏--------------------------*/
+#overall_content > #bottom_bar {
+    clear: both;
+    background-color: #A2B964;
+    text-align: center;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+/*w3c*/
+div.link {
+    float:right;
+    position: absolute;
+    right:0px;
+    bottom:0px;
+}

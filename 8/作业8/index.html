@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--by林紫勤 注册-->
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="HTML, log">
+	<link rel="stylesheet" type="text/css" href="index.css" />
+	<script src = "jquery.js" type="text/javascript"></script>
+	<title> 注册 </title>
+</head>
+
+<body>
+	<h1> 注册 </h1>
+	<div id = "big">
+		<h2> 用户注册 </h2>
+		<form action="http://localhost:8000" method="post">
+		<div id = "small">
+			<label>姓名：<input name='username' /></label>
+			<p id = "namenotice" class = "notice"></p>
+			<label>学号：<input name='studentid' /></label>
+			<p id = "idnotice" class = "notice"></p>
+			<label>电话：<input name='phone' /></label>
+			<p id = "phonenotice" class = "notice"></p>
+			<label>邮箱：<input name='email' /></label>
+			<p id = "emailnotice" class = "notice"></p>
+			<input type="submit" id="submit" value="提交" />
+			<input type="reset" id="reset" value="重置" />
+		</div>
+    	</form>
+	</div>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

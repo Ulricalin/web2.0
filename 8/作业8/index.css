@@ -1,0 +1,32 @@
+h1, h2{
+	text-align: center;
+}
+
+#big {
+	margin: auto;
+	margin-top: 50px;
+	height: 400px;
+	width: 400px;
+	border: 1px;
+}
+#small {
+	margin: auto;
+	margin-top: 50px;
+	text-align:center;
+}
+input {
+	border: none;
+	border-bottom: solid 1px;
+	margin-bottom:15px;
+	height:20px;
+}
+#reset, #submit {
+	height:30px;
+	width:50px;
+	margin:10px;
+	float:right;
+}
+.notice {
+	font-size: 10px;
+	color: red; 
+}

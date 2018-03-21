@@ -1,0 +1,135 @@
+/*A GAME BY 林紫勤 2016.10*/
+body {
+	font-family:sans-serif;
+}
+h1, h2, #maze_containter {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+.bottom_p {
+	margin-right: auto;
+	margin-left: auto;
+	width: 600px;
+}
+#grade {
+	margin-right: auto;
+	margin-left: auto;
+	height: 100px;
+	font-size: 30px;
+	text-align: center;
+}
+#maze_containter {
+	height: 300px;
+	width: 400px;
+	padding: 0px;
+}
+
+/*左中右三模块*/
+.left, .right, .middle{
+	display:inline-block;
+	float:left;
+	height: 200px;
+}
+.left, .right {
+	width: 100px;
+	border-bottom:0.1px solid;
+}
+div.right {
+	float: right;
+}
+.middle {
+	width: 200px;
+	border-top: 0.1px solid;
+}
+
+/*墙---------------------*/
+.wall {
+	display:inline-block;
+	float:left;
+	background: rgba(220,220,220,1);
+	margin:0px;
+}
+
+.wall1 {
+	height: 50px;
+	width: 100%;
+	border-left:  0.1px solid;
+	border-right:  0.1px solid;
+}
+.wall1_top {
+	border-top: 0.1px solid;
+}
+.wall1_bottom {
+	border-bottom:0.1px solid;
+}
+
+.wall2 {
+	height: 150px;
+	width:100px;
+	border-bottom: 0.1px solid;
+	border-right: 0.1px solid;
+	border-left: 0.1px solid;
+}
+
+.wall3 {
+	border-top: 0.1px solid;
+	border-right: 0.1px solid;
+	border-left: 0.1px solid;
+	height:150px;
+	width:100px;
+}
+.small_wall {
+	margin:auto;
+	background: rgba(220,220,220,1);
+	height: 20px;
+	width: 70px;
+	border: 1px solid;
+}
+
+
+/*路--------------------------*/
+.road {
+	display:inline-block;
+	float:left;
+	margin:0px;
+}
+
+.road1 {
+	height:50px;
+	width:200px;
+}
+
+.road2 {
+	height:50px;
+	width:100px;
+}
+
+.road3 {
+	height:149px;
+	width:49px;
+	border-bottom: 0.1px solid;
+}
+.road_right {
+	float: right;
+}
+
+/*开始与结束----------------*/
+#Start, #End {
+	height: 30px;
+	width:25px;
+	margin: 3px 0px 4px 0px;
+	text-align:center;
+	padding: 5px;
+	border: 0.1px solid;
+	font-size: 25px;
+	font-weight: bolder;
+}
+#Start {
+	float:left;
+	background:#98FB98;
+}
+#End {
+	float:right;
+	background:#7B68EE;
+}

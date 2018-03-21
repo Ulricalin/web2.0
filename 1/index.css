@@ -1,0 +1,39 @@
+@charset "utf-8";
+/*by 林紫勤 2016.9.10 for index.gtml*/
+body {
+	background: white;
+	background-image: url("http://img.52jbj.com/uploads/allimg/150608/co15060Q15000-3.jpg");
+	background-repeat: repeat;
+	background-attachment:fixed;
+	color: rgb(64, 64, 64);
+	font-size: 11pt;
+	font-family: Georgia, Garamond, serif;
+}
+
+h1 {
+	color: rgb(164, 164, 0);
+	font-family: "Century Gothic", Futura, Verdana, sans-serif;
+	text-decoration: underline;
+	text-align: center;
+	font-size: 40pt;
+}
+
+div.word {
+    float: left;
+    width: 25%;
+}
+div.photo {
+	float: right;
+	width: 70%;
+}
+ol {
+	color: rgb(164, 164, 255);
+	font-family: "Century Gothic", Futura, Verdana, sans-serif;
+	text-decoration: underline;
+	font-size: 22pt;
+}
+li {
+	width: 100%;
+	min-height: 200px;
+	margin: 3em;
+}

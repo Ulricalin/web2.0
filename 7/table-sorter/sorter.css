@@ -1,0 +1,50 @@
+body {
+  font-family: "serif";
+}
+
+h1, h2 {
+	font-weight: 900;
+}
+
+table {
+	border-collapse:collapse;
+	font-weight: 600;
+	text-align: left;
+    font-family: "Century Gothic";
+
+}
+
+table, td, th {
+	border:1px solid #C0C0C0;
+}
+
+
+td {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+th {
+	padding-right: 20px;
+  	padding-left: 5px;
+  	background-color:  rgb(24, 38, 125);
+	color: white;
+}
+
+.alternate {
+  background-color: #DDDDDD;
+}
+
+.ascend {
+	background-image: url(ascend.png);
+}
+
+.descend {
+	background-image: url(descend.png);
+}
+
+.ascend, .descend {
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  background-color: #A3B1FC;
+}

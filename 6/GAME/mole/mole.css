@@ -1,0 +1,61 @@
+/*A GAME BY 林紫勤 2016.10*/
+
+h1, h2, #out_Comment, #Mole_container {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+#out_Comment {
+	height: 60px;
+	width: 400px;
+	margin-bottom: 10px;
+}
+#out_Comment #switch {
+	height: 20px;
+	width: 200px;
+	display: inline-block;
+	margin: 5px;
+}
+#out_Comment #game_status {
+	height: 20px;
+	width: 190px;
+	display: inline-block;
+	border: 1px solid;
+	margin: 10px 5px 5px 5px;
+}
+#out_Comment #Time, #out_Comment #Score {
+	height: 20px;
+	width: 120px;
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+.output {
+	height: 20px;
+	width: 50px;
+	border: 1px solid;
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+#Mole_container {
+	height: 300px;
+	width: 400px;
+	margin-top: 20px;
+}
+
+.mole {
+	height: 22px;
+	width: 22px;
+	border-radius: 50%;
+	border: 1px solid;
+	display: inline-block;
+	margin: 5px;
+	background-color: black;
+}
+.bottom_p {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.bottom_p p {
+	font-weight: bolder;
+}

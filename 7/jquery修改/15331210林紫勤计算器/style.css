@@ -1,0 +1,55 @@
+/*by 林紫勤 计算器 2016.10*/
+body {
+	margin:0 auto;
+
+}
+#Calculator_positioner {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+h1 {
+	position:relative;
+	margin-left: auto;
+	margin-right: auto;
+	height: 50px;
+	width: 300px;
+	text-align: center;
+	color: rgb(125, 250, 60);
+	font-weight: bold;
+	background:rgba(75, 90, 150, 0.2)
+}
+#Calculator {
+	height: 400px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 5px gray solid;
+	position:relative;
+	background: rgba(175, 180, 180, 0.8);
+}
+#Calculator #output {
+	height:15%;
+	width:95%;
+	border:2px gray solid;
+	margin:6px;
+	text-align: right;
+	overflow: hidden;
+	font-size: 24px;
+	background: rgba(100, 200, 200, 0.3);
+}
+
+#Calculator #input {
+	height:79%;
+	width:95%;
+	border:2px gray solid;
+	margin:6px;
+	position: relative;
+}
+#Calculator #input button{
+	float: left;
+	display: inline-block;
+	height: 12%;
+	width: 20%;
+	margin: 3% 2% 3% 2%;
+}

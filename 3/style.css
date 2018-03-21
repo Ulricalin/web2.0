@@ -1,0 +1,268 @@
+﻿/*by林紫勤 2016.9.24*/
+
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+#at-plus-container {
+  font-weight: bolder;
+}
+/* bottom的位置控制--居中*/
+#bottom-positioner {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  width: 250px;
+  height: 700px;
+}
+
+/* @+bottom初始化设置 */
+.icon {
+  padding:0px;
+  margin:0px;
+
+  position: absolute;
+  bottom: 20%;
+  left: 45%;
+
+  height: 25px;
+  width: 25px;
+
+  background-size: 75% 65%;
+  background-position: center;
+  background-color: rgba(30, 54, 130, 0.5);
+  background-image: url(assets/images/atplus_white.png);
+  background-repeat: no-repeat;
+
+  border-radius: 50%;
+
+  transition: all 0.4s;
+  -moz-transition: all 0.4s; /* Firefox 4 */
+  -webkit-transition: all 0.4s; /* Safari and Chrome */
+  -o-transition: all 0.4s; /* Opera */
+  transition-delay:0.8s;
+}
+
+/* @+bottom动画设置 */
+#button:hover .icon {
+  width: 50px;
+  height: 50px;
+
+  left: 42%;
+  bottom: 19%;
+  background-size: 65% 55%;
+  background-color: rgba(48, 63, 159, 1);
+  background-image: url(assets/images/atplus_green.png);
+  transition-delay: 0s;
+}
+
+ul  {
+  list-style:none;
+}
+
+/* 大圈的动画设置 */
+#button:hover  #info-bar .info {
+  background-color: gray;
+  width: 128px;
+  height: 128px;
+
+  position: absolute;
+  left: 27%;
+  bottom: 28%;
+
+  opacity: 1;/*显示*/
+  transition-delay: 0s;
+}
+
+/* 大圈初始化 */
+.info {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  left: 42%;
+  bottom: 19%;
+
+  transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear; /* Firefox 4 */
+  -webkit-transition: all 0.4s linear; /* Safari and Chrome */
+  -o-transition: all 0.4s linear; /* Opera */
+  transition-delay: 0.4s;
+
+  opacity: 0;/*隐藏*/
+  overflow: hidden;
+}
+
+/* 讨论 */
+.info .user {
+  position: absolute;
+  top: 7%;
+  left: 30%;
+}
+
+/* 参与讨论人数 */
+.info .user span {
+  color: white;
+  position: relative;
+  left: 20%;
+  vertical-align: super;
+}
+
+/* 评论 */
+.info .comment {
+  position: absolute;
+  top: 29%;
+  left: 23%;
+}
+
+/* 评论数目 */
+.info .comment span {
+  color: white;
+  font-size: 30px;
+  position: relative;
+  left: 22%;
+  vertical-align: bottom;
+}
+
+/* 我的评论 */
+.info .posted {
+  position: absolute;
+  top: 65%;
+  left: 18%;
+}
+
+/* 我的评论数目 */
+.info .posted span {
+  color: rgb(100, 250, 180);
+  position: relative;
+  left: 19%;
+  vertical-align: top;
+}
+
+/* 被赞 */
+.info .like {
+  position: absolute;
+  top: 64%;
+  left: 55%;
+}
+
+/* 被赞数目 */
+.info .like span {
+  color: rgb(100, 250, 180);
+  position: relative;
+  left: 19%;
+  vertical-align: top;
+}
+
+/* 五个小图标动画设置------+位置控制 */
+#button:hover #control-ring-container #control-ring {
+    border-radius: 50%;
+    width: 180px;
+    height: 150px;
+    left: 12%;
+    bottom: 8%;
+    opacity: 1;
+    transition-delay: 0s;
+    margin: 0px;
+}
+
+/* 五个小圈初始化 ----从中间出来 */
+#control-ring {
+  margin:0 auto;
+  padding:0px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  left: 42%;
+  bottom: 19%;
+
+  transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear; /* Firefox 4 */
+  -webkit-transition: all 0.4s linear; /* Safari and Chrome */
+  -o-transition: all 0.4s linear; /* Opera */
+  transition-delay: 0.4s;
+
+  opacity: 0;
+}
+
+/* 五个小圈初始化 */
+.mask, .history, .message, .setting, .sign {
+  background-color: gray;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 17px, 22px;
+
+  transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear; /* Firefox 4 */
+  -webkit-transition: all 0.4s linear; /* Safari and Chrome */
+  -o-transition: all 0.4s linear; /* Opera */
+  transition-delay: 0.4s;
+
+}
+
+
+.mask {
+  background-image: url(assets/images/nomask.png);
+  position: absolute;
+  left: 6%;
+  bottom: 80%;
+}
+
+
+.history {
+  background-image: url(assets/images/history.png);
+  position: absolute;
+  left: 4%;
+  bottom: 52%;
+}
+
+
+.message {
+  background-image: url(assets/images/message.png);
+  position: absolute;
+  left: 15%;
+  bottom: 28%;
+}
+
+
+
+.message .unread {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: rgba(250, 20, 40, 0.9);
+
+  height:20px;
+  width:20px;
+
+  position:relative;
+  right:-22px;
+  top: -5px;
+  
+  display: inline-block;
+}
+
+
+.setting {
+  background-image: url(assets/images/setting.png);
+  position: absolute;
+  left: 37%;
+  bottom:14%;
+}
+
+
+.sign {
+  background-image: url(assets/images/signin.png);
+  position: absolute;
+  left: 60%;
+  bottom:19%;
+}

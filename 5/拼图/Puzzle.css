@@ -1,0 +1,304 @@
+/*by ziqin lin on 2016.10*/
+
+body {
+	background: url(img/background5.jpg);
+}
+
+h1 {
+	color: #655A4D;
+	font-size: 50px;
+	text-align: center;
+}
+p {
+	font-size: 24px;
+	color: #655A4D;
+	height: 40px;
+}
+#output_time, #Step {
+	display: inline-block;
+	margin: 10px;
+	height: 30px;
+	width: 100px;
+	color: #655A4D;
+	text-align: center;
+	font-size: 24px;
+	box-shadow: 5px 5px 10px 1px gray;
+}
+#mygame {
+	display: inline-block;
+	margin: 50px;
+	margin-left:100px;
+	height: 360px;
+	width: 500px;
+}
+#gamearea {
+	margin: auto;
+	position: relative;
+	height: 352px;
+	width: 352px;
+}
+
+#gamepicture {
+	display: inline-block;
+	height: 352px;
+	width: 352px;
+}
+#buttonlist {
+	height: 100px;
+	width: 500px;
+	margin-top:50px;
+}
+button {
+	height: 40px;
+	margin:10px;
+	font-size: 18px;
+	color: white;
+    background-color: rgb(74, 132, 240);
+    cursor: pointer;
+    box-shadow: 5px 5px 10px 1px gray;
+}
+
+.puzzle {
+  display: inline-block;
+  position: absolute;
+  border-style: solid;
+  border-width: thin;
+  border-color: rgb(174, 174, 174);
+  -webkit-transition-property: left, top;
+  -o-transition-property: left, top;
+  transition-property: left, top;
+
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.puzzle:hover {
+  -webkit-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.puzzle3 {
+	width: 115px;
+	height: 115px;
+}
+.puzzle3r1c1 {
+	top: 1px;
+	left: 1px;
+}
+.puzzle3r1c2 {
+	top: 1px;
+	left: 117px;
+}
+.puzzle3r1c3 {
+	top: 1px;
+	left: 234px;
+}
+.puzzle3r2c1 {
+	top: 117px;
+	left: 1px;
+}
+.puzzle3r2c2 {
+	top: 117px;
+	left: 117px;
+}
+.puzzle3r2c3 {
+	top: 117px;
+	left: 234px;
+}
+.puzzle3r3c1 {
+	top: 234px;
+	left: 1px;
+}
+.puzzle3r3c2 {
+	top: 234px;
+	left: 117px;
+}
+.puzzle3r3c3 {
+	top: 234px;
+	left: 234px;
+}
+
+
+#puzzle3r1c1, #puzzle3r1c2, #puzzle3r1c3 {
+  background-position-y: 0px;
+}
+
+#puzzle3r2c1, #puzzle3r2c2, #puzzle3r2c3 {
+  background-position-y: -117px;
+}
+
+#puzzle3r3c1, #puzzle3r3c2, #puzzle3r3c3 {
+  background-position-y: -234px;
+}
+
+
+
+#puzzle3r1c1, #puzzle3r2c1, #puzzle3r3c1 {
+  background-position-x: 0px;
+}
+
+#puzzle3r1c2, #puzzle3r2c2, #puzzle3r3c2 {
+  background-position-x: -117px;
+}
+
+#puzzle3r1c3, #puzzle3r2c3, #puzzle3r3c3 {
+  background-position-x: -234px;
+}
+
+
+
+
+.puzzle4 {
+	width: 87px;
+	height: 87px;
+}
+
+
+
+.puzzle4r1c1 {
+	top: 1px;
+	left: 1px;
+}
+.puzzle4r1c2 {
+	top: 1px;
+	left: 89px;
+}
+.puzzle4r1c3 {
+	top: 1px;
+	left: 178px;
+}
+.puzzle4r1c4 {
+	top: 1px;
+	left: 267px;
+}
+.puzzle4r2c1 {
+	top: 89px;
+	left: 1px;
+}
+.puzzle4r2c2 {
+	top: 89px;
+	left: 89px;
+}
+.puzzle4r2c3 {
+	top: 89px;
+	left: 178px;
+}
+.puzzle4r2c4 {
+	top: 89px;
+	left: 267px;
+}
+.puzzle4r3c1 {
+	top: 178px;
+	left: 1px;
+}
+.puzzle4r3c2 {
+	top: 178px;
+	left: 89px;
+}
+.puzzle4r3c3 {
+	top: 178px;
+	left: 178px;
+}
+.puzzle4r3c4 {
+	top: 178px;
+	left: 267px;
+}
+.puzzle4r4c1 {
+	top: 267px;
+	left: 1px;
+}
+.puzzle4r4c2 {
+	top: 267px;
+	left: 89px;
+}
+.puzzle4r4c3 {
+	top: 267px;
+	left: 178px;
+}
+.puzzle4r4c4 {
+	top: 267px;
+	left: 267px;
+}
+
+#puzzle4r1c1, #puzzle4r1c2, #puzzle4r1c3, #puzzle4r1c4 {
+  background-position-y: 0px;
+}
+
+#puzzle4r2c1, #puzzle4r2c2, #puzzle4r2c3, #puzzle4r2c4 {
+  background-position-y: -89px;
+}
+
+#puzzle4r3c1, #puzzle4r3c2, #puzzle4r3c3, #puzzle4r3c4 {
+  background-position-y: 178px;
+}
+
+#puzzle4r4c1, #puzzle4r4c2, #puzzle4r4c3, #puzzle4r4c4 {
+  background-position-y: 89px;
+}
+
+#puzzle4r1c1, #puzzle4r2c1, #puzzle4r3c1, #puzzle4r4c1 {
+  background-position-x: 0px;
+}
+
+#puzzle4r1c2, #puzzle4r2c2, #puzzle4r3c2, #puzzle4r4c2 {
+  background-position-x: -89px;
+}
+
+#puzzle4r1c3, #puzzle4r2c3, #puzzle4r3c3, #puzzle4r4c3 {
+  background-position-x: 178px;
+}
+
+#puzzle4r1c4, #puzzle4r2c4, #puzzle4r3c4, #puzzle4r4c4 {
+  background-position-x: 89px;
+}
+
+.blank {
+	visibility: hidden;
+}
+.outgame {
+	opacity: 0;
+}
+.panda {
+  background-image: url(img/panda.jpg);
+}
+.Mona_Lisa {
+  background-image: url(img/meng1.jpg);
+}
+.sidai {
+  background-image: url(img/sidai.jpg);
+}
+.kaka {
+	background-image: url(img/kaka.jpg);
+}
+.yinhun {
+	background-image: url(img/yinhun.jpg);
+}
+
+#score_container {
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.2);
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+#score_container #score {
+	position: fixed;
+	font-size:80px;
+	color: white;
+	top: 50%;
+	width: 100%;
+	height: 100px;
+	vertical-align: middle;
+	background-color: rgba(117, 117, 117, 0.3);
+	text-align: center;
+	cursor: pointer;
+}
+.visible {
+	visibility: visible;
+}
+.disvisible {
+	visibility: hidden;
+}

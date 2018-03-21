@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--/*A GAME BY 林紫勤 2016.10*/-->
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="HTML, MAZE">
+	<link rel="stylesheet" type="text/css" href="maze.css" />
+	<title> MAZE </title>
+</head>
+<body>
+	<h1> The Amazing Mouse Maze! </h1>
+	<h2> Move your mouse over the "S" to begin. </h2>
+	<div id = "grade"></div>
+	<div id = "maze_containter">
+	<div class = "wall wall1 wall1_top"></div>
+	<div class = "left">
+	<div class = "wall wall2 wall2_left"></div><div class = "road road2 road_left">
+		<div id = "Start">S</div>
+	</div>
+	</div>
+	<div class = "middle">
+	<div class = "road road1"></div><div class = "road road3 road_left"></div><div class = "wall wall3"></div><div class = "road road3 road_right"></div>
+	</div>
+	<div class = "right">
+	<div class = "wall wall2 wall2_right"></div><div class = "road road2 road_right">
+		<div id = "End">E</div>
+	</div>
+	</div>
+	<div class = "wall wall1 wall1_bottom"></div>
+	</div>
+	<div class = "bottom_p">
+	<p> The object of this game is to guide the mouse cursor through the start area and get to the end area.Be sure to avoid the walls:</p>
+	<div class = "small_wall"> </div>
+	<p> Good luck! </p>
+	</div>
+	<script src = "script.js" type="text/javascript"></script>
+</body>
+</html>
